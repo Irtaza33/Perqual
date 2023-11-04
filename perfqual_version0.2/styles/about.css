@@ -1,0 +1,119 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#img1{
+ 
+   
+       
+        transform: translateX(100%); /* Slide in from right animation */
+        animation: slideInFromRight 1s ease-out forwards;
+        border-radius: 10px;
+    }
+      
+      @keyframes slideInFromRight {
+        to {
+          transform: translateX(0);
+        }
+      }
+
+#img2{
+    transform: translateX(-100%);
+    animation: slideInFromLeft 1s ease-out forwards; /* Slide in from left animation */
+    border-radius: 10px;
+}
+
+@keyframes fadeInFromSides {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  #text1{
+    transform: translateX(20px);
+    animation: slideInFromRight 1.1s ease-out forwards; /* Slide in from right animation */
+  }
+  #text2{
+    
+
+   
+    transform: translateX(-20px); /* Slide in from left animation */
+    animation: slideInFromLeft 1.1s ease-out forwards;
+  }
+  
+  @keyframes slideInFromLeft {
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  .home {
+    width: 100%;
+    height: 447px;
+}
+
+.home_background_container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.home_background {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.home_content {
+    position: absolute;
+    left: 50%;
+    bottom: 109px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background: #003399;
+    padding-top: 24px;
+    padding-bottom: 18px;
+    padding-left: 39px;
+    padding-right: 42px;
+    border-radius: 8px;
+}
+
+.home_content h1 {
+    font-size: 72px;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 0.5;
+    white-space: nowrap;
+}
+
+
+@media screen and (max-width: 320px),
+       screen and (max-width: 480px) and (orientation: landscape),
+       screen and (min-width: 321px) and (max-width: 480px),
+       screen and (min-width: 481px) and (max-width: 768px) and (orientation: landscape),
+       screen and (min-width: 769px) and (max-width: 1024px),
+       screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape),
+       screen and (min-width: 1025px) and (max-width: 1280px),
+       screen and (min-width: 1025px) and (max-width: 1280px) and (orientation: landscape) {
+
+        .picture{
+
+            padding-top: 200px;
+        }
+
+
+    
+}
+
